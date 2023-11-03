@@ -1,0 +1,19 @@
+***Use select statement to select all items in table ordered by price***
+select *
+from superstore
+order by price 
+
+***Show statistic about item prices***
+select avg (price)
+from superstore;
+
+***Show statistic about prices in the Kitchen Supplies Category***
+select max (price)
+from superstore
+where category = 'Kitchen Supplies';
+
+****What are the top 5 highest rating products****
+select * 
+from superstore
+order by average_rating desc
+limit 5
