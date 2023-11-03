@@ -1,19 +1,19 @@
-***Use select statement to select all items in table ordered by price***
+#Use select statement to select all items in table ordered by price
 select *
 from superstore
-order by price 
+order by price; 
 
-***Show statistic about item prices***
+#Show statistic about item prices
 select avg (price)
 from superstore;
 
-***Show statistic about prices in the Kitchen Supplies Category***
+#Show statistic about prices in the Kitchen Supplies category
 select max (price)
 from superstore
 where category = 'Kitchen Supplies';
 
-****What are the top 5 highest rating products****
+#What are the top 5 highest rating products
 select * 
 from superstore
 order by average_rating desc
-limit 5
+limit 5;
